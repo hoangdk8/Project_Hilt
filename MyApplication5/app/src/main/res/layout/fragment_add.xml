@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#112233"
+    tools:context="AppF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/arrow_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:text="Ghi chú " />
+
+            <ImageButton
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:background="@drawable/ic_confirm" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edit_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/border_edit_text_10sdp"
+            android:gravity="center"
+            android:hint="Nhập tiêu đề"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/border_edit_text_10sdp"
+            android:gravity="start"
+            android:hint="Nhập ghi chú bí mật của bạn ..."
+            android:padding="5dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
